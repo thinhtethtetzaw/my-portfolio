@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar{
+    width: 0%;
+}
+.contactAni {
+    animation: myani 2s ease-in-out infinite;
+}
+
+@keyframes myani {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.contactAni:hover{
+    cursor: url("./assets/images/phone-logo.png"), auto;
+}
